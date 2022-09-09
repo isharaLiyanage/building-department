@@ -1,0 +1,1372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    ;
+}
+.clearfix{overflow: auto;}
+
+:root{
+    --primary-color: rgb(245, 240, 240);
+    --second-color:rgba(238, 235, 235, 0.836);
+    --third-color:rgb(173, 89, 10);
+    --font-color:rgb(63, 61, 61);
+    --paraghp-color:rgb(66, 66, 66);
+    --border-color:rgb(153, 152, 152);
+}
+.dark-theme{
+    --primary-color: rgb(29, 28, 28);
+    --second-color:rgba(43, 42, 42, 0.747);
+    --third-color:rgb(110, 84, 35);
+    --font-color:rgb(228, 226, 226);
+    --paraghp-color:rgb(219, 215, 215);
+    --border-color:rgb(136, 133, 133);
+}
+.display-none{
+    display: none;
+}
+h1{
+    font-size: 15px;
+    color: var(--font-color);
+}
+h2{
+    font-size: 30px;
+    color: var(--font-color);
+}
+h3{
+    font-size: 27px;
+    color: var(--font-color);
+}
+h4{
+    font-size: 27px;
+    color: var(--font-color);
+}
+p{
+    color: var(--paraghp-color);
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    color: var(--third-color);
+    float: right;
+    margin-right: 5px;
+    cursor: pointer;
+    
+}
+a:hover{
+    font-size: 15px;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+button{
+   
+    background: var(--third-color);
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px ;
+    border: none;
+    cursor: pointer;
+}
+body{
+    background-color: var(--primary-color);
+}
+title{
+    background-color: var(--primary-color);
+}
+.contener{
+    max-width: 1500px;
+    margin: auto;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+   
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+
+  .modal-content {
+    background-color:  var(--second-color);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  .contactInfo{
+ 
+    width: 100%;
+    height: 200px;
+    z-index: 6;
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactInfo .info li{
+    list-style: none;
+    border-bottom: 1px var(--border-color) solid;
+}
+.contactInfo .info li a {
+    float: none;
+    color:var(--font-color);
+    border-bottom: 1px var(--border-color) solid;
+}
+
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+.navbar nav{
+ position:relative;
+ width: 100%;
+    height: 50px;
+   text-align: right;
+}
+.navbar nav ul li{
+    display: inline-block;
+    margin-bottom: -4px;
+  
+}
+.navbar nav ul li a{
+    font-size: 20px;
+    margin-right:20px ;
+    margin-top: 1px;
+    color: var(--font-color);
+   
+}
+.navbar nav ul li .topUp{
+    position: relative;
+    font-size: 20px;
+    margin-right:20px ;
+    color: var(--font-color);
+    background:none;
+    margin: 0;
+    margin-bottom: 10px;
+   
+}
+.navbar nav ul li  .darkMode{
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 15px;
+}
+.navbar nav ul li .darkMode img{
+    width: 25px;
+    height:25px;
+}
+.navbar nav ul li a:hover{
+    text-shadow: 0 0 1px #555252, 0 0 4px #e7e7e7;
+}
+.contactinfo{
+    display: none;
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    z-index: 6;
+    right: 5%;
+    background-color: var(--second-color);
+}
+.contactInfo .info li{
+    list-style: none;
+    color: var(--font-color);
+    border-bottom: 1px var(--border-color) solid;
+}
+.contactInfo .info li a {
+    float: none;
+    color:var(--font-color);
+    border-bottom: 1px var(--border-color) solid;
+}
+.heading{
+    position: relative;
+    width: 100%;
+    height:  calc(100vh - 50px);;
+    background-image: linear-gradient(to bottom, #77777750, #121213b2),url(MaxPixel.net-City-Scape-Bulding-Landscape-Sunset-5907451.jpg);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading h1{
+
+    font-size: 52px;
+    color: rgb(255, 255, 255);
+}
+.heading p{
+    color: rgb(230, 238, 253);
+    font-size: 18px;
+}
+.buttonHead{
+    margin: auto;
+    width: 100%;
+    padding-top: 30px;
+    color: white;
+}
+.secondsection{
+    margin-left:100px ;
+    padding: 50px 0 50px;
+    
+    
+}
+.secondsection div{
+    margin: auto;
+    
+    
+
+}
+.secondsection .sectionOne{
+ float: left;
+ width: 430px;
+ 
+
+
+}
+.secondsection .sectionOne h2{
+    padding-top:25px ;
+    margin: 25px;
+}
+.secondsection .sectionOne p{
+    text-align: right;
+    width: 400px;
+  
+}
+.secondsection .sectionOne button{
+    float: right;
+    padding: 5px 20px;
+}
+.secondsection .sectionOneImg img{
+ position: relative;
+margin-left: 100px;
+    width: 250px;
+    height: 250px;
+    
+}
+.sectionthree{
+    
+width: 91%;
+margin: auto;
+padding: 500px 0 50px;
+padding-left: 50px;
+background-color: var(--second-color);
+padding-top: 50px;   
+}
+.sectionthree::-webkit-scrollbar{
+width: 0;
+}
+.sectionthree h4{
+    display: none;
+}
+    .sectionthree div{
+  
+    display:inline-block;
+}
+    .sectionthree .divone{
+
+    width: 400px;
+    height: 100%;
+    padding: 50px 60px 10px 60px;
+    border: 1px var(--border-color) solid;
+}
+    .sectionthree .divone a{
+    margin-top: 25px;
+}
+ .sectionthree .divone:hover h3 {
+font-size: 25px;
+}
+    .sectionthree .divtwo{
+    overflow: auto;
+    width: 400px;
+    padding: 50px 60px 10px 60px;
+    height: 100%;
+}
+    .sectionthree .divthree{
+    overflow: auto;
+    width: 400px;
+    height: 100%;
+ 
+}
+    .sectionthree .divthree h4{
+    display: block;
+    font-size: 30px;
+    padding-bottom: 80px;
+    text-align: right;
+}
+    .sectionthree .divfour{
+    overflow: auto;
+    width: 400px;
+    height: 100%;
+    padding: 50px 60px 10px 60px;
+    border: 1px var(--border-color) solid;
+}
+    .sectionthree .divfour:hover h3 {
+    font-size: 25px;
+    }
+    .sectionthree .divfive{
+    overflow: auto;
+    width: 400px;
+    height: 100%;
+    padding: 50px 60px 10px 60px;
+    border: 1px var(--border-color) solid;
+}
+    .sectionthree .divfive:hover h3 {
+    font-size: 25px;
+    }
+.sectionthree .divsix{
+    overflow: auto;
+    width: 400px;
+    height: 100%;
+    padding: 50px 60px 10px 60px;
+}
+  .fourth-section{
+    max-width: 1000px;
+    padding-top: 50px;
+    height: 400px;
+    margin: auto;
+
+    margin-bottom: 100px;
+    }
+.fourth-section .section-four{
+    margin-top: 5px;
+    float: left;
+    position: relative;
+    left: 100px;
+    width: 400px;
+    height: 300px;
+    padding: 50px;
+    background-color: var(--second-color);
+    z-index: 2;
+   
+}
+.fourth-section .section-four p{
+    text-align: left;
+}
+.fourth-section .section-four a{
+    margin-top: 50px;
+}
+.fourth-section .section-four-img{
+    height: 300px;
+    left:  40% ;
+    position: absolute;
+    z-index: -1;   
+}
+.fourth-section .section-four-img img {
+width: 300px;
+height: 300px;
+}
+
+.fifth-section{
+  
+    max-width: 1000px;
+    height: 400px;
+    margin: auto;
+
+    }
+    .fifth-section .section-five-img {
+        height: 300px;
+        right:50%;
+        position:absolute;
+        z-index: -1;  
+        
+    }
+    .fifth-section .section-five-img img {
+        width:  300px;
+        height: 300px;
+       
+        
+        }
+    .fifth-section .section-five{
+        margin-top: 5px;
+        float: right;
+        position: relative;
+        right: 200px;
+        width: 400px;
+        text-align: right;
+        padding: 50px;
+        background-color: var(--second-color);
+    }
+    .fifth-section .section-five a{
+        margin-top: 50px;
+    }
+
+
+.sixth-section{
+
+    overflow: auto; 
+    margin: auto;
+    max-width: 1000px;
+    height: 100%;
+    padding-top:50px;
+    padding-left: 100px;
+        
+    }
+    .sixth-section::-webkit-scrollbar{
+        width: 10px;
+    }
+    .sixth-section div{
+     
+      display: inline-block;
+     
+    }
+    .sixth-section .management{
+        width: 400px;
+        border: 1px var(--border-color) solid;
+        border-radius: 10px;
+        padding: 50px;
+        
+        margin-bottom:10px ;
+        background-color: var(--second-color);
+       
+    }
+    .sixth-section .general{
+        width: 400px;
+        border: 1px var(--border-color) solid;
+        border-radius: 10px;
+        padding: 50px;
+        padding-top: 80px;
+        margin-bottom:10px ;
+        background-color: var(--second-color);
+       
+    }.sixth-section .design{
+     
+        width: 400px;
+        border: 1px var(--border-color) solid;
+        border-radius: 10px;
+        padding: 50px;
+        margin-bottom:10px ;
+        background-color: var(--second-color);
+        
+    }.sixth-section .building{
+        width: 400px;
+        border: 1px var(--border-color) solid;
+        border-radius: 10px;
+        padding: 50px;
+        margin-bottom:10px ;
+        background-color: var(--second-color);
+    }
+
+  .seventh-section{
+        margin: auto;
+        max-width: 1000px;
+        padding-top: 60px;
+        padding-left: 50px;
+     } 
+
+    .seventh-section div{
+    display: inline-block;
+    }
+    .seventh-section .Construction{
+     width: 400px;
+     padding: 50px;
+     margin-bottom: 10px;
+     border: 1px var(--border-color) solid;
+       
+}
+    .seventh-section .weare{
+     width: 500px;
+     padding-left: 50px;
+     padding-bottom: 0px;
+ 
+}
+    .seventh-section .landscape{
+     width: 400px;
+     border: 1px var(--border-color) solid;
+     padding: 50px;
+     
+   
+}
+    .seventh-section .designs{
+     width: 400px;
+     border: 1px var(--border-color) solid;
+     padding: 50px;
+    
+    
+}
+
+
+
+
+
+.eighth-section{
+    max-width: 1000px;
+    height: 100%;
+    padding-top: 50px;
+    margin-left: 100px;
+}
+.eighth-section div{
+    display: inline-block;
+}
+    .eighth-section-img {
+    width: 300px;
+    margin-right: 10px;
+
+}
+    .eighth-section-img img{
+     width: 300px;
+ 
+}
+    .eighth-section-img-two{
+     width: 400px;
+     height: 100%;
+  
+}
+    .eighth-section-img-two .h2class h2{
+        padding-bottom: 70px;
+        text-align: right;
+        
+    }
+    .eighth-section-img-two img{
+     width: 400px;
+    }
+
+
+
+
+ .ninth-section {
+     max-width: 1000px;
+     margin: auto;
+     margin-top: 50px;
+     padding-left: 50px;
+      
+ }
+    .ninth-section div{
+     display: inline-block;
+ }
+    .ninth-section .constuction{
+    
+      width: 400px;
+      height: 300px;
+      background-color: var(--second-color);
+      padding: 51px;
+
+}
+    .ninth-section .constuction h3 , p{
+      padding-top: 20px;
+}
+    .ninth-section .contracting{
+  
+      width: 400px;
+      height: 300px;
+      background-color: var(--second-color);
+      padding: 55px;
+
+}
+    .ninth-section .contracting h3{
+       padding-top: 23px;
+}
+    .ninth-section .project{
+   
+       width: 400px;
+       height: 300px;
+       margin-top: 5px;
+       background-color: var(--second-color);
+       padding: 50px;
+
+}
+    .ninth-section .project h3{
+        margin-top: 20px;
+    }
+    .ninth-section .blueprint{
+   
+        width: 400px;
+        height: 300px;
+        background-color: var(--second-color);
+        padding: 50px;
+
+}
+    .ninth-section .blueprint h3{
+        margin-top: 20px;
+}
+
+
+
+.tenth-section {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+    .tenth-section div{
+
+        display: inline-block;
+}
+
+    .tenth-section h3{
+        text-align: center;
+        margin: 20px;
+}
+    .tenth-section .img-one{
+        width: 300px;
+        height: 600px;
+        padding-top: 25px;
+
+}
+.tenth-section .img-one  h3{
+        text-align: right;
+}
+    .tenth-section .img-one img{
+      
+        width: 300px;
+        height: 300px;
+}
+    .tenth-section .img-two{
+        width: 300px;
+        height: 600px;
+}
+    .tenth-section .img-two img{
+        padding-top: 0px;
+        width: 300px;
+
+        height: 300px;
+}
+    .tenth-section .img-three{
+        width: 300px;
+        height: 600px;
+        
+}
+    .tenth-section .img-three img{
+        
+        width: 300px;
+        height: 300px;
+        padding-top: 20px;
+}
+
+
+
+.eleventh-section{
+    margin: auto;
+    max-width: 1000px;
+    padding-top: 51px;
+}
+    .eleventh-section img {
+    float:left;
+    margin-left: 5%;
+    width: 150px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+.eleventh-section h3{
+    max-width: 600px;
+    padding: 10px;
+    margin-left: 250px;
+}
+.eleventh-section p{
+    max-width: 600px;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 250px;
+}
+.eleventh-section h6{
+    max-width: 600px;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+    margin-left: 250px;
+    color: var(--font-color);
+}
+
+@media screen and (max-width:970px) {
+    .secondsection{
+        margin-left: 50px;
+    } 
+    .secondsection .sectionOneImg img{
+        margin-left: 50px;
+    }
+    .sectionthree{
+        width: 100%;
+        padding-left: 60px;
+    }
+    .sectionthree .divone{
+        padding: 40px 40px 10px 40px;
+    }
+    .sectionthree .divtwo{
+        padding: 40px 40px 10px 40px;
+    }
+    .sectionthree .divfour{
+        padding: 40px 40px 10px 40px;
+    }
+    .sectionthree .divfive{
+        padding: 40px 40px 10px 40px;
+    }
+    .sixth-section{
+        margin: auto;
+        max-width: 600px;
+        padding: 0;
+        
+    }
+    .sixth-section::-webkit-scrollbar{
+        width: 0;
+    }
+    .sixth-section div{
+        display:list-item;
+        margin: auto;
+        list-style: none;
+    }
+    .sixth-section .management{
+        margin-left: 0px;
+    }
+    .sixth-section .general{
+        margin-right: 0px;  
+    }
+    .sixth-section .design{
+        margin-left: 0px;  
+    }.sixth-section .building{
+        margin-right: 0px;  
+    }
+    .seventh-section{
+        padding: 0;
+       
+        padding-top: 50px;
+    }
+    .seventh-section div{
+        display:list-item;
+        margin: auto;
+        list-style: none;
+    }
+    .tenth-section {
+    padding-left: 20px;
+    }
+    .tenth-section .img-one {
+        width: 250px;
+    }
+    .tenth-section .img-one img{
+        width: 250px;
+    }
+    .tenth-section .img-three{
+        width: 250px;
+    }
+    .tenth-section .img-threeimg {
+        width: 250px;
+    }
+}
+@media screen and (max-width:880px){
+    .sectionthree{
+        width: 100%;
+        padding-left: 20px;
+    }
+    .ninth-section{
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width:840px){
+  
+    .secondsection .sectionOneImg img{
+        position: absolute;
+        left: 55%;
+        z-index: -1;
+        
+    }
+    .secondsection .sectionOne{
+        background-color: var(--second-color);
+    }
+    .sectionthree{
+        
+        margin: auto;
+        max-width: 600px;
+        padding: 0;
+        padding-top: 50px;
+    }
+    .sectionthree div{
+        display: block;
+    }
+    .sectionthree .divone{
+        padding: 50px;
+        margin-left: 200px;
+    }
+    .sectionthree .divtwo{
+        display: none;
+    }
+    .sectionthree .divthree{
+        margin-right: 200px; 
+    }
+    .sectionthree .divfour{
+       
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .sectionthree .divfive{
+        margin-left: 100px;
+    }
+    .eighth-section div{
+        display: block;
+        margin: auto;
+    }
+    
+
+    .eighth-section-img-two{
+      
+        padding: 50px;
+        background-color: var(--primary-color);
+    }
+    .eighth-section-img-two .h2class{
+  
+        text-align: left;
+        margin-left: 50px;
+   
+   
+    }
+    .eighth-section-img-two{
+        margin-top: 50px;
+        
+    }
+    .eighth-section-img-two img{
+        margin-left: -50px;
+    }
+    .ninth-section div{
+        display: block;
+        margin: auto;
+    }
+    .ninth-section .general{
+        margin-right: 50px;
+    }
+    .ninth-section .constuction{
+        margin-left: 50px;
+    }
+    .ninth-section .project{
+        margin-left: 50px;
+    }
+    .ninth-section .blueprint{
+        margin-right: 50px;
+    }
+    .ninth-section .constuction{
+        margin-left: 50px;
+    }
+    .tenth-section {
+        padding-left: 30px;
+        }
+        .tenth-section .img-one {
+            width: 200px;
+            height: 100%;
+        }
+        .tenth-section .img-one img{
+            width: 200px;
+            height: 100%;
+        }
+        .tenth-section .img-two {
+            padding-right: 100px;
+        }
+        .tenth-section .img-three{
+            width: 200px;
+            height: 100%;
+            text-align: right;
+        }
+        .tenth-section .img-three h3{
+            text-align: right;
+        }
+        .tenth-section .img-three img {
+            width: 200px;
+            height: 100%;
+        }
+
+   
+}
+@media screen and (max-width:780px){
+    .sixth-section{
+        margin: auto;
+        padding: 0;
+    }
+    .sixth-section div{
+        display:list-item;
+        margin: auto;
+        list-style: none;
+    }
+    .seventh-section{
+        padding: 0;
+    }
+    .seventh-section div{
+        display:list-item;
+        margin: auto;
+        list-style: none;
+    }
+    .seventh-section .weare{
+        margin-top: -400px;
+        margin-bottom: 350px;
+    }
+    .seventh-section .Construction{
+        margin-top: 300px;
+        margin-left: 50px;
+    }
+    .seventh-section .landscape{
+        margin-bottom: 50px;
+        margin-right: 50px;
+    }
+    .tenth-section {
+        padding-left: 30px;
+        width:100%;
+        }
+        .tenth-section div {
+            display: block;
+           margin: auto;
+           
+        }
+        .tenth-section .img-one {
+            width: 300px;
+            height: 100%;
+            margin-left: 10px;
+        }
+        .tenth-section .img-one img{
+            width: 300px;
+            height: 100%;
+            
+        }
+        .tenth-section .img-two {
+            padding-right: 0px;
+            padding: 0;
+            margin-right: 10px;
+            height: 100%;
+        }
+        .tenth-section .img-three{
+            width: 300px;
+            height: 100%;
+            margin-left: 10px;
+
+            
+           
+        }
+        .tenth-section .img-three h3{
+            text-align: right;
+        }
+        .tenth-section .img-three img {
+            width: 300px;
+            height: 100%;
+            padding: 0;
+        }
+}
+@media screen and (max-width:620px){
+   
+    h1{
+        font-size: 13px;
+      
+    }
+    h2{
+        font-size: 27px;
+        
+    }
+    h3{
+        font-size: 24px;
+     
+    }
+    h4{
+        font-size: 24px;
+     
+    }
+    p{
+     
+        font-size: 12px;
+    }
+    .secondsection{
+        margin-left: 0;
+    }
+    .secondsection .sectionOneImg img{
+        position: absolute;
+        left: 45%;
+        width: 200px;
+       
+        
+    }
+    
+    .sectionthree{
+        
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+   
+    .sectionthree .divone{
+        padding: 50px;
+        margin-left: 100px;
+    }
+    
+    .sectionthree .divthree{
+        margin-right: 200px; 
+    }
+    .sectionthree .divfour{
+       
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .sectionthree .divfive{
+        margin-left: 100px;
+    
+        
+    }
+    
+    .seventh-section .weare{
+        margin-top: -400px;
+        margin-bottom: 350px;
+    }
+    .seventh-section .Construction{
+        margin-top: 300px;
+        margin-left: 50px;
+    }
+    .seventh-section .landscape{
+        margin-bottom: 50px;
+        margin-right: 50px;
+    }
+    .eighth-section{
+        margin: 0;
+    }
+    
+    .eighth-section-img-two{
+      
+        padding: 0px;
+       
+    }
+    .eighth-section-img-two .h2class{
+  
+        text-align: left;
+         margin-left: 10px;
+         margin-top: 50px;
+   
+   
+    }
+    .eighth-section-img-two{
+        margin-top: 50px;
+        
+    }
+    .eighth-section-img-two img{
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width:620px){
+
+   .sectionthree {
+       display: flex;
+       overflow-x: auto;
+   }
+   .sectionthree h4{
+       display: block ;
+       min-width: 100px;
+       margin: 50px;
+     
+       top: 0;
+       bottom: 0;
+   }
+   .sectionthree div{
+       min-width: 400px;
+       margin: 10px;
+   }
+   .sectionthree .divone{
+       padding-bottom: 25px;
+       margin-left: 0;
+   }
+   .sectionthree .divtwo{
+       display: none;
+   }
+   .sectionthree .divthree{
+       display: none;
+   }
+   .sectionthree .divfour{
+       padding: 50px;
+   }
+   .sectionthree .divfive{
+       margin: 10px;
+       padding: 50px;
+   }
+   .sectionthree .divsix{
+       display: none;
+   }
+
+}
+@media screen and (max-width:550px){
+    .heading{
+        height: 300px;
+    }
+
+    .secondsection .sectionOne {
+        width: 300px;
+      
+    }
+    .secondsection .sectionOne p{
+        width: 200px;
+      
+    }
+    .sectionthree .divone{
+
+        width: 300px;
+       
+    }
+
+    .sectionthree .divtwo{
+       
+        width: 300px;
+       
+        height: 100%;
+    }
+        .sectionthree .divthree{
+    
+        width: 300px;
+      
+     
+    }
+    .sectionthree .divfour{
+      
+        width: 300px; 
+    }
+    .sectionthree .divfive{
+    
+        width: 300px;
+       
+       
+    }
+    .sectionthree .divsix{
+        
+        width: 300px;
+      
+      
+    }
+    .fourth-section{
+  
+    height: 300px;
+    
+    
+   
+    }
+    .fourth-section .section-four{
+       
+        width: 300px;
+       
+       
+    }
+    .fifth-section{
+  
+        
+        height: 300px;
+      
+    
+        }
+        .fifth-section .section-five{
+           
+            width: 300px;
+            left: 0;
+            padding: 50px 0px 50px 0;
+        }
+        .sixth-section{width:100%;}
+        .sixth-section .management{
+            width: 300px;
+           
+        }
+        .sixth-section .general{
+            width: 300px;
+           
+        }.sixth-section .design{
+         
+            width: 300px;
+          
+        }.sixth-section .building{
+            width: 300px;
+             }
+    
+    .seventh-section .Construction{
+        width: 300px;
+        margin: 10px;
+    
+    }
+    .seventh-section .landscape{
+        width: 300px;
+        margin-top:50px ;
+       
+   }
+       .seventh-section .designs{
+        width: 300px;
+       
+       
+       
+   }
+   .seventh-section .weare{
+       margin: 0;
+   }
+   .seventh-section .weare h2{
+       display: none;
+    }
+    .eighth-section-img-two .h2class{
+         margin-left: 0px;
+        }
+    
+        .eighth-section-img-two{
+            width: 300px;
+
+       }
+         
+      .eighth-section-img-two img{
+            width: 300px;
+           }
+       
+        .ninth-section .constuction{
+            margin-left: 0px;
+            width: 300px;
+        }
+        .ninth-section .general{
+            margin-right: 0px;
+            width: 300px;
+        }
+        .ninth-section .project{
+            margin-left: 0px;
+            
+      width: 300px;
+        }
+        .ninth-section .blueprint{
+            margin-right: 0px;
+            width: 300px;
+        }
+        .ninth-section .constuction{
+            margin-left: 0px;
+        }
+    .tenth-section {
+        padding-left: 0px;
+        }
+    .tenth-section .img-three{
+        margin-left: 0px;   
+       
+    }
+    .tenth-section {
+        padding-left: 30px;
+        width:100%;
+        }
+        .tenth-section div {
+            display: block;
+           margin: auto;
+           
+        }
+        .tenth-section .img-one {
+            width: 300px;
+            height: 100%;
+            margin-left: 10px;
+        }
+        .tenth-section .img-one img{
+            width: 300px;
+            height: 100%;
+            
+        }
+        .tenth-section .img-two {
+            padding-right: 0px;
+            padding: 0;
+            margin-right: 10px;
+            height: 100%;
+        }
+        .tenth-section .img-three{
+            width: 300px;
+            height: 100%;
+            margin-left: 10px;
+
+            
+           
+        }
+        .tenth-section .img-three h3{
+            text-align: right;
+        }
+        .tenth-section .img-three img {
+            width: 300px;
+            height: 100%;
+            padding: 0;
+        }
+        .eleventh-section{
+            margin: auto;
+            max-width: 1000px;
+            padding-top: 51px;
+        }
+            .eleventh-section img {
+            float:left;
+            margin-left: 5%;
+            width: 50px;
+            height: 100%;
+            border-radius: 5px;
+        }
+        
+        
+        .eleventh-section h3{
+            max-width: 600px;
+            padding: 10px;
+            margin-left: 20px;
+        }
+        .eleventh-section p{
+            max-width: 600px;
+            font-size: 15px;
+            padding: 10px;
+            margin-left: 50px;
+        }
+        .eleventh-section h6{
+            max-width: 600px;
+            font-size: 16px;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: -10px;
+            margin-left: 20px;
+            color: var(--font-color);
+        }
+        .fourth-section{
+            max-width: 1000px;
+            padding-top: 50px;
+            height: 400px;
+            margin: auto;
+            
+            margin-bottom: 100px;
+            }
+            .fourth-section .section-four{
+               
+                
+                left: 00px;
+                
+               
+            }
+            .fourth-section .section-four p{
+                text-align: left;
+            }
+            .fourth-section .section-four a{
+                margin-top: 50px;
+            }
+            .fourth-section .section-four-img{
+                height: 300px;
+                left:  40% ;
+                position: absolute;
+                z-index: -1;   
+            }
+            .fourth-section .section-four-img img {
+          width: 100%;
+            height: 300px;
+            
+            
+            }
+}
+@media screen and (max-width:400px){
+
+
+    
+.navbar nav ul li a {
+   margin-right: 5px;
+   font-size: 15px;
+}
+.navbar nav ul li .topUp{
+    font-size: 15px;
+}
+.secondsection .sectionOneImg img{
+    position: absolute;
+    left: 22%;
+    width: 200px;
+   
+    
+}
+
+}
